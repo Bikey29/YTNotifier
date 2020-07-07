@@ -1,11 +1,11 @@
 {
-    "token": "your-discord-bot-token-here",
+    "token": "Njg1NTM1ODE4ODA2NTkxNTY1.XwQETw.BLztk-rqJ5_r__PhW-wdbCokzBE",
     "message": "New video: **{videoTitle}**! It was uploaded by {videoAuthorName} at {videoPubDate}! Here is the link: {videoURL}",
-    "channel": "your-channel-id-for-announcements-here",
+    "channel": "697450881360068648",
     "youtubers": [
-        "Pewdiepie",
-        "Squeezie",
-        "https://www.youtube.com/channel/UCNuYih-JMtLxOlsjeIos4ZA"
+        "https://www.youtube.com/channel/UCOhHO2ICt0ti9KAh-QHvttQ",
+        "https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA",
+        "https://www.youtube.com/channel/UC8vlDm5xvbxOrCvdu9UNOiA"
     ],
-    "youtubeKey": "your http://console.developer.google.com youtube v3 api key"
+    "youtubeKey": "AIzaSyBSrqqchn7RKEg1gb_XtRwmWuz481K8NHc"
 }
