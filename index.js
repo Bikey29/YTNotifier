@@ -11,11 +11,7 @@ const lastVideos = {};
 const client = new Discord.Client();
 client.login(config.token).catch(console.log);
 
-client.on("ready", () => {
-    console.log(`[!] Ready to listen ${config.youtubers.length} youtubers!`);
-    check();
-    setInterval(check, 20*1000);
-});
+
 
 /**
  * Format a date to a readable string
@@ -79,6 +75,12 @@ function getYoutubeChannelIdFromURL(url) {
     return id;
 }
 
+client.on("ready", () => {
+    client.user.setActivity(`[${youtubeChannelName}]  | The last video is "${tLastVideos[0] ? tLastVideos[0].title : "err"}"`);
+    console.log(`[!] Ready to listen ${config.youtubers.length} youtubers!`);
+    check();
+    setInterval(check, 20*1000);
+});
 /**
  * Get infos for a youtube channel
  * @param {string} name The name of the youtube channel or an url
