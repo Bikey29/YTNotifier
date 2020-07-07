@@ -11,7 +11,12 @@ const lastVideos = {};
 const client = new Discord.Client();
 client.login(config.token).catch(console.log);
 
-
+client.on("ready", () => {
+    client.user.setActivity(`Ready to listen ${config.youtubers.length} youtubers!`);
+    console.log(`[!] Ready to listen ${config.youtubers.length} youtubers!`);
+    check();
+    setInterval(check, 20*1000);
+});
 
 /**
  * Format a date to a readable string
