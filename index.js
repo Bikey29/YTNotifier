@@ -74,13 +74,13 @@ function getYoutubeChannelIdFromURL(url) {
     }
     return id;
 }
-async function getLastVideo(youtubeChannelName, rssURL){
+async function getLastVideo(youtubeChannelName, rssURL)
 client.on("ready", () => {
     client.user.setActivity(`[${youtubeChannelName}]  | The last video is "${tLastVideos[0] ? tLastVideos[0].title : "err"}"`);
     console.log(`[!] Ready to listen ${config.youtubers.length} youtubers!`);
     check();
     setInterval(check, 20*1000);
-})};
+});
 /**
  * Get infos for a youtube channel
  * @param {string} name The name of the youtube channel or an url
